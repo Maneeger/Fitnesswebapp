@@ -1,0 +1,536 @@
+@import "../css/Font.css";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../css/Font.css";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(https://images.pexels.com/photos/4753987/pexels-photo-4753987.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(33, 30, 30, 0.5568627451);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #d8d4d4;
+  gap: 0.5rem;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  width: 80%;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+}
+.form .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+.form .logo h1 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  margin-left: -20px;
+}
+.form .logo .icon {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 26%;
+}
+.form .logo .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.form h3.signup-caption {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+.form P {
+  font-size: 20px;
+}
+.form p.small {
+  font-size: 1rem;
+  margin-left: 34px;
+  text-align: left;
+  width: 100%;
+}
+.form h4 {
+  margin-top: 0;
+}
+.form .div {
+  margin: 5px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.form .input_box {
+  width: 100%;
+}
+.form .metrics-div {
+  margin: 5px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.form .metrics-div .metrics {
+  width: 100%;
+}
+.form .metrics-div .metrics input {
+  text-indent: 30px;
+}
+.form .age-div {
+  margin: 5px auto;
+  gap: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.form .age-div .age {
+  width: 100%;
+}
+.form .gender_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.form .gender_box .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  height: 70%;
+  background-color: #222324;
+}
+.form .gender_box .gender input {
+  margin-left: 20px;
+}
+.form .gender_box .custom-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+.form .gender_box .custom-radio input[type=radio] {
+  opacity: 0;
+  /* Hide the default radio button */
+  height: 0;
+  width: 0;
+}
+.form .gender_box .custom-radio input[type=radio]:checked + .checkmark {
+  background-color: white;
+  /* Change background color on selection */
+}
+.form .gender_box .custom-radio .checkmark {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  /* Adjust border color as needed */
+}
+.form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 2px solid transparent;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+.form .input .eyeclosed {
+  visibility: hidden;
+  position: absolute;
+  bottom: 22%;
+  right: 7px;
+}
+.form .input i.ri-git-repository-private-fill,
+.form .input i.ri-mail-fill,
+.form .input i.ri-cake-2-line,
+.form .input i.ri-user-4-line,
+.form .input i.ri-user-fill {
+  right: 7px;
+  bottom: 24%;
+  -webkit-transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
+}
+.form .input i.ri-weight-line,
+.form .input i.ri-expand-height-fill,
+.form .input i.ri-health-book-fill {
+  left: 7px;
+  bottom: 24%;
+  -webkit-transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+.form .input i {
+  position: absolute;
+  right: 7px;
+}
+.form .input:hover i.ri-git-repository-private-fill,
+.form .input:hover i.ri-mail-fill,
+.form .input:hover i.ri-cake-2-line,
+.form .input:hover i.ri-user-4-line,
+.form .input:hover i.ri-user-fill {
+  opacity: 0.3;
+}
+.form .input:hover i.ri-weight-line,
+.form .input:hover i.ri-expand-height-fill,
+.form .input:hover i.ri-health-book-fill {
+  -webkit-transform: translatey(170%);
+          transform: translatey(170%);
+  opacity: 0.3;
+}
+.form .input input {
+  width: 100%;
+  color: white;
+  border: 2px solid transparent;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+  outline: none;
+  background-color: #222324;
+  padding: 10px;
+  font-size: 1rem;
+}
+.form .input input:hover {
+  cursor: pointer;
+}
+.form .input input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.4;
+  -webkit-transition: text-indent 0.9s;
+  transition: text-indent 0.9s;
+}
+.form .input input::-moz-placeholder {
+  color: white;
+  opacity: 0.4;
+  -moz-transition: text-indent 0.9s;
+  transition: text-indent 0.9s;
+}
+.form .input input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.4;
+  -ms-transition: text-indent 0.9s;
+  transition: text-indent 0.9s;
+}
+.form .input input::-ms-input-placeholder {
+  color: white;
+  opacity: 0.4;
+  -ms-transition: text-indent 0.9s;
+  transition: text-indent 0.9s;
+}
+.form .input input::placeholder {
+  color: white;
+  opacity: 0.4;
+  -webkit-transition: text-indent 0.9s;
+  transition: text-indent 0.9s;
+}
+.form .input input:focus-within {
+  border-color: wheat;
+  text-indent: 30px;
+}
+.form .auth-div {
+  margin: 5px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  gap: 2rem;
+  padding-bottom: 0;
+}
+.form .auth-div .auth {
+  width: 100%;
+}
+.form .auth-div .auth.role {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form .auth-div .auth.role select {
+  /* Adjust width as needed */
+  background-color: #222324;
+  color: white;
+  padding: 12px 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  /* Optional: change cursor to pointer on hover */
+}
+.form .auth-div .auth.role select:focus {
+  /* Style on focus */
+  outline: none;
+  border-color: #999;
+}
+.form .auth-div .auth.role select option {
+  color: white;
+  outline: none;
+}
+.form .auth-div .auth.role select option :focus {
+  /* Style on hover */
+  outline: none;
+  background-color: #e9e9e9;
+  /* Example: Change background color on hover */
+}
+.form .auth-div .auth.role select:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  /* Adjust arrow position */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-width: 0 5px 5px 0;
+  border-style: solid;
+  border-color: #ccc;
+}
+.form input[type=number]::-webkit-outer-spin-button,
+.form input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form .signup {
+  width: 50%;
+  padding: 9px;
+  border-radius: 7px;
+  background-color: #ca0123;
+  font-size: 1.2rem;
+  color: #d8d4d4;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.form .signup:hover {
+  background-color: #6b4343;
+  color: white;
+  cursor: pointer;
+  border-color: white;
+}
+.form .signup:hover a.btn-border {
+  border-color: transparent;
+}
+.form .signup:disabled {
+  background-color: transparent;
+  border-color: grey;
+}
+.form .btn-border {
+  width: 100%;
+  padding: 12px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #d8d4d4;
+  border: 2px solid #ca0123;
+}
+.form a.btn-border {
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 7px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: white;
+  border: 2px solid #ca0123;
+}
+.form .check {
+  font-weight: 200;
+}
+.form .check .login {
+  padding: 2px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  margin-left: 7px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.form .check .login:hover {
+  background-color: #d8d4d4;
+  color: black;
+  border-color: transparent;
+}
+.form :disabled {
+  background-color: transparent;
+  border-color: grey;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  /* Hide the modal by default */
+  position: fixed;
+  /* Stay in place when scrolling */
+  z-index: 1;
+  /* Sit on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if modal content overflows */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Transparent black background */
+  /* Modal Content */
+  /* Animation for modal entrance (optional) */
+  /* Modal Header */
+  /* Modal Body */
+  /* Modal Footer */
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  position: relative;
+  /* 15% from the top and centered horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Modal content width */
+  -webkit-animation-name: modalAnim;
+          animation-name: modalAnim;
+  /* Optional: Add animation for modal entrance */
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+@-webkit-keyframes modalAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modalAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal .modal-header {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.modal .modal-title {
+  margin-bottom: 0;
+  font-size: 2.3em;
+  font-weight: 600;
+  text-align: center;
+}
+.modal .modal-body {
+  padding: 20px;
+}
+.modal .modal-body p {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+.modal .close-modal {
+  color: #ca0123;
+  font-size: 38px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+.modal .close-modal:hover,
+.modal .close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .error-title {
+  color: #ca0123;
+}
+
+.show {
+  display: block;
+}/*# sourceMappingURL=Signup.css.map */

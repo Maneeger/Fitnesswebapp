@@ -1,0 +1,345 @@
+.pie-wrapper {
+  /* Set size and border radius for circular shape */
+  width: 100px;
+  /* Adjust width as needed */
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  /* Background color for unfilled section */
+  position: relative;
+  /* Needed for label positioning */
+  display: inline-block;
+  /* Allow side-by-side placement */
+  margin: 10px;
+  /* Optional spacing between bars */
+}
+
+.label {
+  position: absolute;
+  /* Position label inside circle */
+  top: 50%;
+  /* Center label vertically */
+  left: 50%;
+  /* Center label horizontally */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* Offset for centering */
+  font-size: 24px;
+  /* Adjust font size as needed */
+  color: #fff;
+  background-color: red;
+  /* Label text color */
+  text-align: center;
+  /* Center text alignment */
+}
+
+.smaller {
+  font-size: 12px;
+  /* Adjust size for percentage symbol */
+  vertical-align: top;
+  /* Align percentage symbol slightly above */
+}
+
+.progress-100 .progress-0 {
+  background: conic-gradient(#4caf50 var("0%"), #f3f3f3 var("0%"));
+}
+.progress-100 .progress-1 {
+  background: conic-gradient(#4caf50 var("1%"), #f3f3f3 var("1%"));
+}
+.progress-100 .progress-2 {
+  background: conic-gradient(#4caf50 var("2%"), #f3f3f3 var("2%"));
+}
+.progress-100 .progress-3 {
+  background: conic-gradient(#4caf50 var("3%"), #f3f3f3 var("3%"));
+}
+.progress-100 .progress-4 {
+  background: conic-gradient(#4caf50 var("4%"), #f3f3f3 var("4%"));
+}
+.progress-100 .progress-5 {
+  background: conic-gradient(#4caf50 var("5%"), #f3f3f3 var("5%"));
+}
+.progress-100 .progress-6 {
+  background: conic-gradient(#4caf50 var("6%"), #f3f3f3 var("6%"));
+}
+.progress-100 .progress-7 {
+  background: conic-gradient(#4caf50 var("7%"), #f3f3f3 var("7%"));
+}
+.progress-100 .progress-8 {
+  background: conic-gradient(#4caf50 var("8%"), #f3f3f3 var("8%"));
+}
+.progress-100 .progress-9 {
+  background: conic-gradient(#4caf50 var("9%"), #f3f3f3 var("9%"));
+}
+.progress-100 .progress-10 {
+  background: conic-gradient(#4caf50 var("10%"), #f3f3f3 var("10%"));
+}
+.progress-100 .progress-11 {
+  background: conic-gradient(#4caf50 var("11%"), #f3f3f3 var("11%"));
+}
+.progress-100 .progress-12 {
+  background: conic-gradient(#4caf50 var("12%"), #f3f3f3 var("12%"));
+}
+.progress-100 .progress-13 {
+  background: conic-gradient(#4caf50 var("13%"), #f3f3f3 var("13%"));
+}
+.progress-100 .progress-14 {
+  background: conic-gradient(#4caf50 var("14%"), #f3f3f3 var("14%"));
+}
+.progress-100 .progress-15 {
+  background: conic-gradient(#4caf50 var("15%"), #f3f3f3 var("15%"));
+}
+.progress-100 .progress-16 {
+  background: conic-gradient(#4caf50 var("16%"), #f3f3f3 var("16%"));
+}
+.progress-100 .progress-17 {
+  background: conic-gradient(#4caf50 var("17%"), #f3f3f3 var("17%"));
+}
+.progress-100 .progress-18 {
+  background: conic-gradient(#4caf50 var("18%"), #f3f3f3 var("18%"));
+}
+.progress-100 .progress-19 {
+  background: conic-gradient(#4caf50 var("19%"), #f3f3f3 var("19%"));
+}
+.progress-100 .progress-20 {
+  background: conic-gradient(#4caf50 var("20%"), #f3f3f3 var("20%"));
+}
+.progress-100 .progress-21 {
+  background: conic-gradient(#4caf50 var("21%"), #f3f3f3 var("21%"));
+}
+.progress-100 .progress-22 {
+  background: conic-gradient(#4caf50 var("22%"), #f3f3f3 var("22%"));
+}
+.progress-100 .progress-23 {
+  background: conic-gradient(#4caf50 var("23%"), #f3f3f3 var("23%"));
+}
+.progress-100 .progress-24 {
+  background: conic-gradient(#4caf50 var("24%"), #f3f3f3 var("24%"));
+}
+.progress-100 .progress-25 {
+  background: conic-gradient(#4caf50 var("25%"), #f3f3f3 var("25%"));
+}
+.progress-100 .progress-26 {
+  background: conic-gradient(#4caf50 var("26%"), #f3f3f3 var("26%"));
+}
+.progress-100 .progress-27 {
+  background: conic-gradient(#4caf50 var("27%"), #f3f3f3 var("27%"));
+}
+.progress-100 .progress-28 {
+  background: conic-gradient(#4caf50 var("28%"), #f3f3f3 var("28%"));
+}
+.progress-100 .progress-29 {
+  background: conic-gradient(#4caf50 var("29%"), #f3f3f3 var("29%"));
+}
+.progress-100 .progress-30 {
+  background: conic-gradient(#4caf50 var("30%"), #f3f3f3 var("30%"));
+}
+.progress-100 .progress-31 {
+  background: conic-gradient(#4caf50 var("31%"), #f3f3f3 var("31%"));
+}
+.progress-100 .progress-32 {
+  background: conic-gradient(#4caf50 var("32%"), #f3f3f3 var("32%"));
+}
+.progress-100 .progress-33 {
+  background: conic-gradient(#4caf50 var("33%"), #f3f3f3 var("33%"));
+}
+.progress-100 .progress-34 {
+  background: conic-gradient(#4caf50 var("34%"), #f3f3f3 var("34%"));
+}
+.progress-100 .progress-35 {
+  background: conic-gradient(#4caf50 var("35%"), #f3f3f3 var("35%"));
+}
+.progress-100 .progress-36 {
+  background: conic-gradient(#4caf50 var("36%"), #f3f3f3 var("36%"));
+}
+.progress-100 .progress-37 {
+  background: conic-gradient(#4caf50 var("37%"), #f3f3f3 var("37%"));
+}
+.progress-100 .progress-38 {
+  background: conic-gradient(#4caf50 var("38%"), #f3f3f3 var("38%"));
+}
+.progress-100 .progress-39 {
+  background: conic-gradient(#4caf50 var("39%"), #f3f3f3 var("39%"));
+}
+.progress-100 .progress-40 {
+  background: conic-gradient(#4caf50 var("40%"), #f3f3f3 var("40%"));
+}
+.progress-100 .progress-41 {
+  background: conic-gradient(#4caf50 var("41%"), #f3f3f3 var("41%"));
+}
+.progress-100 .progress-42 {
+  background: conic-gradient(#4caf50 var("42%"), #f3f3f3 var("42%"));
+}
+.progress-100 .progress-43 {
+  background: conic-gradient(#4caf50 var("43%"), #f3f3f3 var("43%"));
+}
+.progress-100 .progress-44 {
+  background: conic-gradient(#4caf50 var("44%"), #f3f3f3 var("44%"));
+}
+.progress-100 .progress-45 {
+  background: conic-gradient(#4caf50 var("45%"), #f3f3f3 var("45%"));
+}
+.progress-100 .progress-46 {
+  background: conic-gradient(#4caf50 var("46%"), #f3f3f3 var("46%"));
+}
+.progress-100 .progress-47 {
+  background: conic-gradient(#4caf50 var("47%"), #f3f3f3 var("47%"));
+}
+.progress-100 .progress-48 {
+  background: conic-gradient(#4caf50 var("48%"), #f3f3f3 var("48%"));
+}
+.progress-100 .progress-49 {
+  background: conic-gradient(#4caf50 var("49%"), #f3f3f3 var("49%"));
+}
+.progress-100 .progress-50 {
+  background: conic-gradient(#4caf50 var("50%"), #f3f3f3 var("50%"));
+}
+.progress-100 .progress-51 {
+  background: conic-gradient(#4caf50 var("51%"), #f3f3f3 var("51%"));
+}
+.progress-100 .progress-52 {
+  background: conic-gradient(#4caf50 var("52%"), #f3f3f3 var("52%"));
+}
+.progress-100 .progress-53 {
+  background: conic-gradient(#4caf50 var("53%"), #f3f3f3 var("53%"));
+}
+.progress-100 .progress-54 {
+  background: conic-gradient(#4caf50 var("54%"), #f3f3f3 var("54%"));
+}
+.progress-100 .progress-55 {
+  background: conic-gradient(#4caf50 var("55%"), #f3f3f3 var("55%"));
+}
+.progress-100 .progress-56 {
+  background: conic-gradient(#4caf50 var("56%"), #f3f3f3 var("56%"));
+}
+.progress-100 .progress-57 {
+  background: conic-gradient(#4caf50 var("57%"), #f3f3f3 var("57%"));
+}
+.progress-100 .progress-58 {
+  background: conic-gradient(#4caf50 var("58%"), #f3f3f3 var("58%"));
+}
+.progress-100 .progress-59 {
+  background: conic-gradient(#4caf50 var("59%"), #f3f3f3 var("59%"));
+}
+.progress-100 .progress-60 {
+  background: conic-gradient(#4caf50 var("60%"), #f3f3f3 var("60%"));
+}
+.progress-100 .progress-61 {
+  background: conic-gradient(#4caf50 var("61%"), #f3f3f3 var("61%"));
+}
+.progress-100 .progress-62 {
+  background: conic-gradient(#4caf50 var("62%"), #f3f3f3 var("62%"));
+}
+.progress-100 .progress-63 {
+  background: conic-gradient(#4caf50 var("63%"), #f3f3f3 var("63%"));
+}
+.progress-100 .progress-64 {
+  background: conic-gradient(#4caf50 var("64%"), #f3f3f3 var("64%"));
+}
+.progress-100 .progress-65 {
+  background: conic-gradient(#4caf50 var("65%"), #f3f3f3 var("65%"));
+}
+.progress-100 .progress-66 {
+  background: conic-gradient(#4caf50 var("66%"), #f3f3f3 var("66%"));
+}
+.progress-100 .progress-67 {
+  background: conic-gradient(#4caf50 var("67%"), #f3f3f3 var("67%"));
+}
+.progress-100 .progress-68 {
+  background: conic-gradient(#4caf50 var("68%"), #f3f3f3 var("68%"));
+}
+.progress-100 .progress-69 {
+  background: conic-gradient(#4caf50 var("69%"), #f3f3f3 var("69%"));
+}
+.progress-100 .progress-70 {
+  background: conic-gradient(#4caf50 var("70%"), #f3f3f3 var("70%"));
+}
+.progress-100 .progress-71 {
+  background: conic-gradient(#4caf50 var("71%"), #f3f3f3 var("71%"));
+}
+.progress-100 .progress-72 {
+  background: conic-gradient(#4caf50 var("72%"), #f3f3f3 var("72%"));
+}
+.progress-100 .progress-73 {
+  background: conic-gradient(#4caf50 var("73%"), #f3f3f3 var("73%"));
+}
+.progress-100 .progress-74 {
+  background: conic-gradient(#4caf50 var("74%"), #f3f3f3 var("74%"));
+}
+.progress-100 .progress-75 {
+  background: conic-gradient(#4caf50 var("75%"), #f3f3f3 var("75%"));
+}
+.progress-100 .progress-76 {
+  background: conic-gradient(#4caf50 var("76%"), #f3f3f3 var("76%"));
+}
+.progress-100 .progress-77 {
+  background: conic-gradient(#4caf50 var("77%"), #f3f3f3 var("77%"));
+}
+.progress-100 .progress-78 {
+  background: conic-gradient(#4caf50 var("78%"), #f3f3f3 var("78%"));
+}
+.progress-100 .progress-79 {
+  background: conic-gradient(#4caf50 var("79%"), #f3f3f3 var("79%"));
+}
+.progress-100 .progress-80 {
+  background: conic-gradient(#4caf50 var("80%"), #f3f3f3 var("80%"));
+}
+.progress-100 .progress-81 {
+  background: conic-gradient(#4caf50 var("81%"), #f3f3f3 var("81%"));
+}
+.progress-100 .progress-82 {
+  background: conic-gradient(#4caf50 var("82%"), #f3f3f3 var("82%"));
+}
+.progress-100 .progress-83 {
+  background: conic-gradient(#4caf50 var("83%"), #f3f3f3 var("83%"));
+}
+.progress-100 .progress-84 {
+  background: conic-gradient(#4caf50 var("84%"), #f3f3f3 var("84%"));
+}
+.progress-100 .progress-85 {
+  background: conic-gradient(#4caf50 var("85%"), #f3f3f3 var("85%"));
+}
+.progress-100 .progress-86 {
+  background: conic-gradient(#4caf50 var("86%"), #f3f3f3 var("86%"));
+}
+.progress-100 .progress-87 {
+  background: conic-gradient(#4caf50 var("87%"), #f3f3f3 var("87%"));
+}
+.progress-100 .progress-88 {
+  background: conic-gradient(#4caf50 var("88%"), #f3f3f3 var("88%"));
+}
+.progress-100 .progress-89 {
+  background: conic-gradient(#4caf50 var("89%"), #f3f3f3 var("89%"));
+}
+.progress-100 .progress-90 {
+  background: conic-gradient(#4caf50 var("90%"), #f3f3f3 var("90%"));
+}
+.progress-100 .progress-91 {
+  background: conic-gradient(#4caf50 var("91%"), #f3f3f3 var("91%"));
+}
+.progress-100 .progress-92 {
+  background: conic-gradient(#4caf50 var("92%"), #f3f3f3 var("92%"));
+}
+.progress-100 .progress-93 {
+  background: conic-gradient(#4caf50 var("93%"), #f3f3f3 var("93%"));
+}
+.progress-100 .progress-94 {
+  background: conic-gradient(#4caf50 var("94%"), #f3f3f3 var("94%"));
+}
+.progress-100 .progress-95 {
+  background: conic-gradient(#4caf50 var("95%"), #f3f3f3 var("95%"));
+}
+.progress-100 .progress-96 {
+  background: conic-gradient(#4caf50 var("96%"), #f3f3f3 var("96%"));
+}
+.progress-100 .progress-97 {
+  background: conic-gradient(#4caf50 var("97%"), #f3f3f3 var("97%"));
+}
+.progress-100 .progress-98 {
+  background: conic-gradient(#4caf50 var("98%"), #f3f3f3 var("98%"));
+}
+.progress-100 .progress-99 {
+  background: conic-gradient(#4caf50 var("99%"), #f3f3f3 var("99%"));
+}
+.progress-100 .progress-100 {
+  background: conic-gradient(#4caf50 var("100%"), #f3f3f3 var("100%"));
+}/*# sourceMappingURL=progressbar2.css.map */

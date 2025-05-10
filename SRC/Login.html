@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/Login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <form action="" class="form" id="loginForm">
+        <h3> Login</h3>
+
+        <div class="email div">
+            <label for="Email" class="label">Email</label>
+            <div class="input">
+                <i class="ri-mail-fill"></i>
+                <input type="email" class="field" placeholder="enter Email" id="email" required>
+            </div>
+
+        </div>
+        <div class="password div">
+            <label for="Password">Password</label>
+            <div class="input">
+                <i class="ri-git-repository-private-fill"></i>
+                <input type="password" placeholder="enter password" id="password" class="field" required>
+                <img src="../img/closed-eye-icon-4.jpg" class="eyeclosed" style="width:25px;" alt="">
+
+            </div>
+        </div>
+
+        <button id="submit" class="login" type="submit">Login</button>
+        <p>don't have an account</p>
+        <a href="Signup.html" class="btn-border">signup</a>
+    </form>
+    <!-- //empty -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login Successful!</h5>
+
+            </div>
+            <div class="modal-body">
+                <p>logged in succesfully!</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal  " id="fbModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title error-title">login error</h5>
+                <button type="button" class="close-modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <p id="error-msg"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- welcome -->
+    <div id="welcome-modal" class="welcome-modal">
+        <div class="modal-content">
+            <div class="modalBody" id="modalBody">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" defer src="./javascript/login.js"></script>
+</body>
+
+</html>

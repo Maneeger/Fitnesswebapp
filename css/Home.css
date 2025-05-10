@@ -1,0 +1,271 @@
+@import "../css/Font.css";
+@import "../css/Font.css";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  padding-inline: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.top-header * {
+  color: white;
+}
+.top-header:hover {
+  background: rgba(0, 0, 0, 0.98);
+}
+
+/* Navbar on Scroll (Active State) dom class */
+.scroll {
+  background: rgba(27, 25, 25, 0.5568627451);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  /* Background color on scroll down */
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo h1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  margin-left: -20px;
+}
+.logo .icon {
+  width: 100px;
+  height: 100px;
+}
+.logo .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6rem;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hero {
+  padding-block: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/fitness\ wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .text-content {
+  width: 600px;
+  padding-inline: 30px;
+  padding-block: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  margin-top: 6.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: aliceblue;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.hero .text-content .caption h1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.hero .text-content .caption h1 .healthy {
+  font-family: cursive;
+  color: #ca0123;
+}
+.hero .text-content .caption p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.hero .text-content .div-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+.hero .text-content .div-btn .play {
+  text-decoration: none;
+  background: none;
+}
+.hero .text-content .div-btn .play i {
+  background: rgba(255, 255, 255, 0.31);
+  padding: 17px;
+  border-radius: 100px;
+  color: white;
+}
+.hero .text-content .div-btn .play .play-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.hero .text-content .div-btn .play .play-1 p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  background: none;
+}
+.hero .text-content .numbers {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6;
+}
+.hero .text-content .numbers small {
+  padding: 10px;
+  font-size: 18px;
+}
+.hero .text-content .numbers small p:nth-child(1) {
+  font-size: 40px;
+}
+.hero .text-content .border {
+  border-inline: 1px solid white;
+}
+
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-block: 100px;
+  padding-inline: 100px;
+  gap: 6rem;
+  background: url(../img/2ndslidebg.jpg);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.section1 .img-div {
+  background: url(../img/ropes-2.webp);
+  border-radius: 2rem;
+  background-position: center;
+  background-size: 600px;
+  padding: 200px;
+  background-repeat: no-repeat;
+}
+.section1 .text-div {
+  color: white;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section1 .text-div h1 {
+  margin-top: 20px;
+  font-size: 1cm;
+}
+.section1 .text-div p {
+  line-height: 30px;
+}
+.section1 .text-div a.btn {
+  max-width: 160px;
+  padding-inline: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 13px;
+  background: #ca0123;
+  color: white;
+  padding-inline: 22px;
+  text-decoration: none;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+.btn:hover {
+  background: transparent;
+  border: 2px solid #ca0123;
+}/*# sourceMappingURL=Home.css.map */

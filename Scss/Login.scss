@@ -1,0 +1,514 @@
+@import "./mixin";
+@import"../css/Font.css";
+
+
+
+
+* {
+    @include boxmodel(300);
+
+    font-family: "Saira", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    background: url(https://cdn.pixabay.com/photo/2016/03/31/03/23/male-1291996_1280.jpg); //
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 30, 30, 0.728);
+    align-items: center;
+    justify-content: center;
+    color: $lightgray;
+    height: 500px;
+    gap: 1rem;
+    width: 600px;
+    padding-top: 0.2rem;
+    padding-inline: 3rem;
+
+
+
+    h3 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    P {
+        font-size: 20px;
+    }
+
+    p.small {
+        font-size: 1rem;
+        margin-left: 34px;
+        text-align: left;
+        width: 100%;
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    .div {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+
+    .input {
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 2px solid transparent;
+        color: white;
+        overflow: hidden;
+        padding: 0;
+
+
+
+        .eyeclosed {
+            visibility: hidden;
+            position: absolute;
+            bottom: 22%;
+            right: 7px;
+
+        }
+
+        &:hover {
+
+            i {
+                opacity: 0.4;
+            }
+
+
+
+
+        }
+
+
+
+
+
+
+        i.ri-git-repository-private-fill,
+        i.ri-mail-fill,
+        i.ri-user-line {
+            left: 6px;
+            bottom: 25%;
+            transition: opacity .6s ease-in-out;
+        }
+
+        i {
+
+            position: absolute;
+        }
+
+
+    }
+
+    input {
+        margin-top: 8px;
+        width: 100%;
+        // color: $lightgray;
+        color: white;
+        border: 2px solid transparent;
+        transition: border .4s ease-in-out;
+        outline: none;
+        background-color: $gray;
+        padding: 13px;
+        font-size: 1rem;
+        text-indent: 35px;
+
+
+
+
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::placeholder {
+            color: white;
+            opacity: 0.4;
+            text-indent: 25px;
+            transition: text-indent .7s;
+
+        }
+
+
+
+        &:focus-within {
+            border-color: wheat;
+            text-indent: 30px;
+
+
+            &::placeholder {
+                opacity: 0.5;
+                text-indent: 70px;
+
+            }
+
+            .ri-git-repository-private-fill,
+            i.ri-mail-fill,
+            i.ri-user-line {
+                bottom: 30%;
+
+            }
+
+        }
+
+
+    }
+
+    .label {
+        text-align: left;
+        width: 100%;
+        transition: .3s opacity;
+        color: $lightgray;
+    }
+
+    .login {
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+        margin-bottom: 6px;
+        background-color: $logo-color;
+        font-size: 1.2rem;
+        color: $lightgray;
+        border: 2px solid transparent;
+        transition: border .2s ease-in-out, background-color .2ss ease-in;
+
+
+        &:hover {
+            background-color: #6b4343;
+            color: white;
+            cursor: pointer;
+            border-color: white;
+
+            a.btn-border {
+                border-color: transparent;
+            }
+        }
+
+        &:disabled {
+            background-color: transparent;
+            border-color: grey;
+        }
+    }
+
+
+
+    a.btn-border {
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: white;
+        border: 0.1px solid #ca012396;
+        transition: border-color .2s ease-in-out, background .5s ease;
+
+        &:hover {
+            border-color: transparent;
+            background: white;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+
+    :disabled {
+        background-color: transparent;
+        border-color: grey;
+    }
+
+
+}
+
+// modal
+
+
+
+//  close icon styles for modal
+
+// .close {
+//     color: #aaa;
+//     float: right;
+//     font-size: 28px;
+//     font-weight: bold;
+//     transition: .2s ease-in-out;
+// }
+
+// .close:hover,
+// .close:focus {
+//     color: $logo-color;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
+
+
+
+
+// dom classess
+.block {
+    display: block;
+}
+
+.text-indent {
+    text-indent: 19px;
+}
+
+.none {
+    display: none;
+}
+
+.small {
+
+    color: white;
+    font-size: 15px;
+    display: none;
+}
+
+.welcome-modal {
+    display: none;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 30, 30, 0.728);
+    padding: 10px;
+
+    .modal-content {
+        background-color: transparent;
+        color: white;
+        margin: 15% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px;
+        border: 1px solid #888;
+        width: 80%;
+
+        .modalBody {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                margin-bottom: 20px;
+                color: white;
+                border: 2px solid white;
+                padding: 12px;
+                border-radius: 2px;
+                font-weight: 700;
+                letter-spacing: 3px;
+                transition: .2s ease-in-out;
+
+                &:hover {
+                    background-color: $logo-color;
+                    border-color: transparent;
+                }
+            }
+
+            .welcome {
+                font-size: 40px;
+                letter-spacing: 6px;
+                font-family: poppins;
+
+            }
+
+            .username {
+                font-size: 30px;
+                font-family: poppins;
+            }
+        }
+
+    }
+
+
+}
+
+.empty {
+    box-sizing: border-box;
+    width: 30%;
+    height: 250px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    margin: 6% auto;
+    background-color: white;
+    color: black;
+
+
+
+    h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+
+    .emptyicon {
+        font-size: 4rem;
+    }
+
+    .closeicon {
+        color: #aaa;
+        width: 100%;
+        text-align: right;
+        transition: .2s ease-in-out;
+
+        .close {
+            font-size: 28px;
+            font-weight: bold;
+
+            &:hover {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            &:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+// dom classes
+.modal {
+    display: none;
+    /* Hide the modal by default */
+    position: fixed;
+    /* Stay in place when scrolling */
+    z-index: 1;
+    /* Sit on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if modal content overflows */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Transparent black background */
+
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        position: relative;
+        /* 15% from the top and centered horizontally */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Modal content width */
+        animation-name: modalAnim;
+        /* Optional: Add animation for modal entrance */
+        animation-duration: 0.4s;
+    }
+
+    /* Animation for modal entrance (optional) */
+    @keyframes modalAnim {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Modal Header */
+    .modal-header {
+        padding: 16px;
+        border-bottom: 1px solid #e0e0e0;
+
+    }
+
+    .modal-title {
+        margin-bottom: 0;
+        font-size: 2.3em;
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+
+
+    /* Modal Body */
+    .modal-body {
+        padding: 20px;
+
+        p {
+            font-size: 1.2em;
+            font-weight: 500;
+            text-align: center;
+
+        }
+
+    }
+
+    .close-modal {
+        color: $logo-color;
+        font-size: 38px;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        right: 12px;
+
+    }
+
+    .close-modal:hover,
+    .close-modal:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .error-title {
+        color: $logo-color;
+    }
+
+    /* Modal Footer */
+}
+
+
+
+.show {
+    display: block;
+}

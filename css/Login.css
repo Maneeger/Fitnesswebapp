@@ -1,0 +1,500 @@
+@import "../css/Font.css";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../css/Font.css";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  background: url(https://cdn.pixabay.com/photo/2016/03/31/03/23/male-1291996_1280.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(33, 30, 30, 0.728);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #d8d4d4;
+  height: 500px;
+  gap: 1rem;
+  width: 600px;
+  padding-top: 0.2rem;
+  padding-inline: 3rem;
+}
+.form h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.form P {
+  font-size: 20px;
+}
+.form p.small {
+  font-size: 1rem;
+  margin-left: 34px;
+  text-align: left;
+  width: 100%;
+}
+.form h4 {
+  margin-top: 0;
+}
+.form .div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 2px solid transparent;
+  color: white;
+  overflow: hidden;
+  padding: 0;
+}
+.form .input .eyeclosed {
+  visibility: hidden;
+  position: absolute;
+  bottom: 22%;
+  right: 7px;
+}
+.form .input:hover i {
+  opacity: 0.4;
+}
+.form .input i.ri-git-repository-private-fill,
+.form .input i.ri-mail-fill,
+.form .input i.ri-user-line {
+  left: 6px;
+  bottom: 25%;
+  -webkit-transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
+}
+.form .input i {
+  position: absolute;
+}
+.form input {
+  margin-top: 8px;
+  width: 100%;
+  color: red;
+  border: 2px solid transparent;
+  -webkit-transition: border 0.4s ease-in-out;
+  transition: border 0.4s ease-in-out;
+  outline: none;
+  background-color: #40414d;
+  padding: 13px;
+  font-size: 1rem;
+  text-indent: 35px;
+}
+.form input:hover {
+  cursor: pointer;
+}
+.form input::-webkit-input-placeholder {
+  color: red;
+  opacity: 0.4;
+  text-indent: 13px;
+  -webkit-transition: text-indent 0.4s;
+  transition: text-indent 0.4s;
+}
+.form input::-moz-placeholder {
+  color: red;
+  opacity: 0.4;
+  text-indent: 13px;
+  -moz-transition: text-indent 0.4s;
+  transition: text-indent 0.4s;
+}
+.form input:-ms-input-placeholder {
+  color: red;
+  opacity: 0.4;
+  text-indent: 13px;
+  -ms-transition: text-indent 0.4s;
+  transition: text-indent 0.4s;
+}
+.form input::-ms-input-placeholder {
+  color: red;
+  opacity: 0.4;
+  text-indent: 13px;
+  -ms-transition: text-indent 0.4s;
+  transition: text-indent 0.4s;
+}
+.form input::placeholder {
+  color: red;
+  opacity: 0.4;
+  text-indent: 13px;
+  -webkit-transition: text-indent 0.4s;
+  transition: text-indent 0.4s;
+}
+.form input:focus-within {
+  border-color: wheat;
+  text-indent: 30px;
+}
+.form input:focus-within::-webkit-input-placeholder {
+  opacity: 0.5;
+  text-indent: 70px;
+}
+.form input:focus-within::-moz-placeholder {
+  opacity: 0.5;
+  text-indent: 70px;
+}
+.form input:focus-within:-ms-input-placeholder {
+  opacity: 0.5;
+  text-indent: 70px;
+}
+.form input:focus-within::-ms-input-placeholder {
+  opacity: 0.5;
+  text-indent: 70px;
+}
+.form input:focus-within::placeholder {
+  opacity: 0.5;
+  text-indent: 70px;
+}
+.form input:focus-within .ri-git-repository-private-fill,
+.form input:focus-within i.ri-mail-fill,
+.form input:focus-within i.ri-user-line {
+  bottom: 30%;
+}
+.form .label {
+  text-align: left;
+  width: 100%;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  color: #d8d4d4;
+}
+.form .login {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 6px;
+  background-color: #ca0123;
+  font-size: 1.2rem;
+  color: #d8d4d4;
+  border: 2px solid transparent;
+  -webkit-transition: border 0.2s ease-in-out, background-color 0.2ss ease-in;
+  transition: border 0.2s ease-in-out, background-color 0.2ss ease-in;
+}
+.form .login:hover {
+  background-color: #6b4343;
+  color: white;
+  cursor: pointer;
+  border-color: white;
+}
+.form .login:hover a.btn-border {
+  border-color: transparent;
+}
+.form .login:disabled {
+  background-color: transparent;
+  border-color: grey;
+}
+.form a.btn-border {
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: white;
+  border: 0.1px solid rgba(202, 1, 35, 0.5882352941);
+  -webkit-transition: border-color 0.2s ease-in-out, background 0.5s ease;
+  transition: border-color 0.2s ease-in-out, background 0.5s ease;
+}
+.form a.btn-border:hover {
+  border-color: transparent;
+  background: white;
+  color: #000;
+  font-weight: 700;
+}
+.form :disabled {
+  background-color: transparent;
+  border-color: grey;
+}
+
+.block {
+  display: block;
+}
+
+.text-indent {
+  text-indent: 19px;
+}
+
+.none {
+  display: none;
+}
+
+.small {
+  color: white;
+  font-size: 15px;
+  display: none;
+}
+
+.welcome-modal {
+  display: none;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(33, 30, 30, 0.728);
+  padding: 10px;
+}
+.welcome-modal .modal-content {
+  background-color: transparent;
+  color: white;
+  margin: 15% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.welcome-modal .modal-content .modalBody {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.welcome-modal .modal-content .modalBody a {
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white;
+  border: 2px solid white;
+  padding: 12px;
+  border-radius: 2px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.welcome-modal .modal-content .modalBody a:hover {
+  background-color: #ca0123;
+  border-color: transparent;
+}
+.welcome-modal .modal-content .modalBody .welcome {
+  font-size: 40px;
+  letter-spacing: 6px;
+  font-family: poppins;
+}
+.welcome-modal .modal-content .modalBody .username {
+  font-size: 30px;
+  font-family: poppins;
+}
+
+.empty {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 30%;
+  height: 250px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  margin: 6% auto;
+  background-color: white;
+  color: black;
+}
+.empty h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.empty .emptyicon {
+  font-size: 4rem;
+}
+.empty .closeicon {
+  color: #aaa;
+  width: 100%;
+  text-align: right;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.empty .closeicon .close {
+  font-size: 28px;
+  font-weight: bold;
+}
+.empty .closeicon .close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.empty .closeicon .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  /* Hide the modal by default */
+  position: fixed;
+  /* Stay in place when scrolling */
+  z-index: 1;
+  /* Sit on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if modal content overflows */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Transparent black background */
+  /* Modal Content */
+  /* Animation for modal entrance (optional) */
+  /* Modal Header */
+  /* Modal Body */
+  /* Modal Footer */
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  position: relative;
+  /* 15% from the top and centered horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Modal content width */
+  -webkit-animation-name: modalAnim;
+          animation-name: modalAnim;
+  /* Optional: Add animation for modal entrance */
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+@-webkit-keyframes modalAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modalAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal .modal-header {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.modal .modal-title {
+  margin-bottom: 0;
+  font-size: 2.3em;
+  font-weight: 600;
+  text-align: center;
+}
+.modal .modal-body {
+  padding: 20px;
+}
+.modal .modal-body p {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+.modal .close-modal {
+  color: #ca0123;
+  font-size: 38px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+.modal .close-modal:hover,
+.modal .close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .error-title {
+  color: #ca0123;
+}
+
+.show {
+  display: block;
+}/*# sourceMappingURL=Login.css.map */n.css.map */

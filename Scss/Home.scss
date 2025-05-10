@@ -1,0 +1,208 @@
+@import "./variables";
+@import "./mixin";
+
+* {
+    @include boxmodel(400px)
+}
+
+body {
+    // background: url(../img/pexels-leonardho-1552242.jpg);
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding-inline: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+    * {
+        color: white;
+    }
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.98);
+    }
+}
+
+/* Navbar on Scroll (Active State) dom class */
+.scroll {
+    background: #1b19198e;
+    backdrop-filter: blur(14px);
+    /* Background color on scroll down */
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        font-size: 2rem;
+        font-family: sans-serif;
+        font-weight: 900;
+        margin-left: -20px;
+
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 6rem;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+.hero {
+    padding-block: 100px;
+    display: flex;
+    background: url(../img/fitness\ wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .text-content {
+        width: 600px;
+        padding-inline: 30px;
+        padding-block: 20px;
+        display: flex;
+        justify-self: center;
+        margin-top: 6.5rem;
+        flex-direction: column;
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(10px);
+
+        .caption {
+            h1 {
+                font-size: 2rem;
+                font-family: sans-serif;
+                font-weight: 900;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+
+                .healthy {
+                    font-family: cursive;
+                    color: $logo-color;
+                }
+
+            }
+
+            p {
+
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+
+        .div-btn {
+            display: flex;
+            gap: 2rem;
+
+            .play {
+                text-decoration: none;
+                background: none;
+
+                i {
+                    background: rgba(255, 255, 255, 0.31);
+                    padding: 17px;
+                    border-radius: 100px;
+                    color: white;
+                }
+
+
+                .play-1 {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    text-decoration: none;
+                    color: white;
+
+                    p {
+                        font-size: 1.2rem;
+                        text-transform: capitalize;
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .numbers {
+            margin-top: 20px;
+            display: flex;
+            gap: 6;
+
+            small {
+                padding: 10px;
+                font-size: 18px;
+
+                p:nth-child(1) {
+                    font-size: 40px;
+                }
+
+
+            }
+
+
+        }
+
+        .border {
+            border-inline: 1px solid white;
+        }
+    }
+
+
+}
+
+.section1 {
+
+    @include First-section(url(../img/2ndslidebg.jpg))
+}
+
+
+// utility
+.btn {
+    @include Button
+}

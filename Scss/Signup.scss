@@ -1,0 +1,437 @@
+@import "./mixin";
+@import "../css/Font.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    @include boxmodel(300);
+    // @include border
+}
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.pexels.com/photos/4753987/pexels-photo-4753987.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    background-color: #211e1e8e;
+    align-items: center;
+    justify-content: center;
+    color: $lightgray;
+    // max-height: 750px;
+    transition: max-height .5s ease-in-out;
+    width: 80%;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        position: relative;
+
+
+        h1 {
+            font-size: 1rem;
+            font-family: sans-serif;
+            font-weight: 900;
+            margin-left: -20px;
+            padding-block: 0;
+        }
+
+        .icon {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            left: 26%;
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    h3.signup-caption {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+
+    }
+
+    P {
+        font-size: 20px;
+    }
+
+    p.small {
+        font-size: 1rem;
+        margin-left: 34px;
+        text-align: left;
+        width: 100%;
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    .div {
+        margin: 5px auto;
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    .input_box {
+        width: 100%;
+    }
+
+
+
+
+
+
+    .input {
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 2px solid transparent;
+        color: white;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+
+
+
+        .eyeclosed {
+            visibility: hidden;
+            position: absolute;
+            bottom: 22%;
+            right: 7px;
+
+        }
+
+        i.ri-git-repository-private-fill,
+        i.ri-mail-fill,
+        i.ri-cake-2-line,
+        i.ri-user-4-line,
+        i.ri-user-fill {
+            right: 7px;
+            bottom: 24%;
+            transition: opacity .6s ease-in-out;
+        }
+
+        i.ri-weight-line,
+        i.ri-expand-height-fill,
+        i.ri-health-book-fill {
+            left: 7px;
+            bottom: 24%;
+            transition: opacity .6s ease-in-out;
+            transition: transform .7s ease-in-out;
+
+
+        }
+
+        i {
+
+            position: absolute;
+            right: 7px;
+        }
+
+        &:hover {
+
+            i.ri-git-repository-private-fill,
+            i.ri-mail-fill,
+            i.ri-cake-2-line,
+            i.ri-user-4-line,
+            i.ri-user-fill {
+                opacity: 0.3;
+            }
+
+
+
+            i.ri-weight-line,
+            i.ri-expand-height-fill,
+            i.ri-health-book-fill {
+                transform: translatey(170%);
+                opacity: 0.3;
+            }
+
+        }
+
+        input {
+            width: 100%;
+            color: white;
+            border: 2px solid transparent;
+            transition: border .4s ease-in-out;
+            outline: none;
+            background-color: $gray2;
+            padding: 10px;
+            font-size: 1rem;
+
+            &:hover {
+                cursor: pointer;
+
+            }
+
+            &::placeholder {
+                color: white;
+                opacity: 0.4;
+                transition: text-indent .9s;
+            }
+
+
+            &:focus-within {
+                border-color: wheat;
+                text-indent: 30px;
+
+
+
+            }
+
+
+        }
+
+
+
+    }
+
+    .auth-div {
+        margin: 5px auto;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        gap: 2rem;
+        padding-bottom: 0;
+
+        .auth {
+            width: 100%;
+        }
+
+
+    }
+
+
+
+    .signup {
+        width: 50%;
+        padding: 9px;
+        border-radius: 7px;
+        background-color: $logo-color;
+        font-size: 1.2rem;
+        color: #d8d4d4;
+        border: 2px solid transparent;
+        transition: all .2s ease-in-out;
+        margin-top: 1.5rem;
+        margin-bottom: 0.6rem;
+
+
+        &:hover {
+            background-color: #6b4343;
+            color: white;
+            cursor: pointer;
+            border-color: white;
+
+            a.btn-border {
+                border-color: transparent;
+            }
+        }
+
+        &:disabled {
+            background-color: transparent;
+            border-color: grey;
+        }
+    }
+
+    .btn-border {
+        width: 100%;
+        padding: 12px;
+
+        border-radius: 7px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        color: $lightgray;
+        border: 2px solid $logo-color;
+
+    }
+
+    a.btn-border {
+        padding: 12px;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 7px;
+        border-radius: 7px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        color: white;
+        border: 2px solid $logo-color;
+    }
+
+    .check {
+        font-weight: 200;
+
+        .login {
+            padding: 2px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-bottom: 1px solid;
+            margin-left: 7px;
+            text-decoration: none;
+            color: white;
+            transition: all .2s ease-in-out;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: #d8d4d4;
+                color: black;
+                border-color: transparent;
+            }
+        }
+
+    }
+
+
+    :disabled {
+        background-color: transparent;
+        border-color: grey;
+    }
+
+
+}
+
+
+
+
+
+// dom classess
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hide the modal by default */
+    position: fixed;
+    /* Stay in place when scrolling */
+    z-index: 1;
+    /* Sit on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if modal content overflows */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Transparent black background */
+
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        position: relative;
+        /* 15% from the top and centered horizontally */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Modal content width */
+        animation-name: modalAnim;
+        /* Optional: Add animation for modal entrance */
+        animation-duration: 0.4s;
+    }
+
+    /* Animation for modal entrance (optional) */
+    @keyframes modalAnim {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Modal Header */
+    .modal-header {
+        padding: 16px;
+        border-bottom: 1px solid #e0e0e0;
+
+    }
+
+    .modal-title {
+        margin-bottom: 0;
+        font-size: 2.3em;
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+
+
+    /* Modal Body */
+    .modal-body {
+        padding: 20px;
+
+        p {
+            font-size: 1.2em;
+            font-weight: 500;
+            text-align: center;
+
+        }
+
+    }
+
+    .close-modal {
+        color: $logo-color;
+        font-size: 38px;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        right: 12px;
+
+    }
+
+    .close-modal:hover,
+    .close-modal:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .error-title {
+        color: $logo-color;
+    }
+
+    /* Modal Footer */
+}
+
+
+
+.show {
+    display: block;
+}

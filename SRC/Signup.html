@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/Signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+    <script src="./javascript/signup.js" defer type="module"></script>
+
+
+</head>
+
+<body>
+    <form action="" class="form" id="signupForm">
+        <h3 class="signup-caption"> Signup Account</h3>
+        <div class=" div">
+            <div class="input_box">
+                <label for="firstname">fullname</label>
+                <div class="input">
+                    <i class="ri-user-fill"></i>
+                    <input type="text" placeholder="Fullname" required>
+                </div>
+            </div>
+            <div class="input_box">
+                <label for="username">username</label>
+                <div class="input">
+                    <i class="ri-user-4-line"></i>
+                    <input type="text" placeholder="Username" id="username" required>
+
+                </div>
+            </div>
+        </div>
+        <!-- username endds -->
+
+
+
+        <div class="auth-div">
+            <div class="auth">
+                <label for="Email">Email</label>
+                <div class="input">
+                    <i class="ri-mail-fill"></i>
+                    <input type="email" placeholder="enter Email" id="email" required>
+
+                </div>
+            </div>
+            <div class="auth">
+                <label for="Password">Password</label>
+                <div class="input">
+                    <input type="password" placeholder="enter password" id="password" required>
+                    <i><img src="../img/closed-eye-icon-4.jpg" style="width:25px;" alt=""></i>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <button id="submit" class="signup" type="submit">Sign Up</button>
+        <p class="check">Already have an account <a href="Login.html" class="login">Login</a></p>
+
+    </form>
+    <!-- signup success modal -->
+
+
+    <div class="modal" id="signupSuccessModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sign Up Successful!</h5>
+
+            </div>
+            <div class="modal-body">
+                <p>Your account has been created successfully!</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- empty modal -->
+    <div class="modal empty-error " id="emptyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title error-title">Error</h5>
+                <button type="button" class="close-modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <p>fields are empty!</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- firebase errror -->
+    <!-- empty modal -->
+    <div class="modal  " id="fbModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title error-title">Error creating user</h5>
+                <button type="button" class="close-modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <p id="error-msg"></p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
