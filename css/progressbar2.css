@@ -21,8 +21,7 @@
   /* Center label vertically */
   left: 50%;
   /* Center label horizontally */
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   /* Offset for centering */
   font-size: 24px;
   /* Adjust font size as needed */
@@ -342,4 +341,6 @@
 }
 .progress-100 .progress-100 {
   background: conic-gradient(#4caf50 var("100%"), #f3f3f3 var("100%"));
-}/*# sourceMappingURL=progressbar2.css.map */
+}
+
+/*# sourceMappingURL=progressbar2.css.map */

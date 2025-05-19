@@ -1,25 +1,15 @@
 @import "../css/Font.css";
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
-@import "../css/Font.css";
 @import "../css/Font.css";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: "Saira", sans-serif;
-  font-weight: 300;
+  font-weight: 400px;
   font-style: normal;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background: url(https://images.pexels.com/photos/4753987/pexels-photo-4753987.jpeg?auto=compress&cs=tinysrgb&w=600);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  scroll-behavior: smooth;
 }
 
 .topheader {
@@ -34,7 +24,6 @@ body {
   left: 0;
   z-index: 5;
   transition: background-color 0.3s ease-in-out;
-  will-change: background-color;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .topheader .logo {
@@ -47,7 +36,7 @@ body {
   font-family: sans-serif;
   font-weight: 900;
   margin-left: -20px;
-  color: #d8d4d4;
+  color: white;
 }
 .topheader .logo .icon {
   width: 100px;
@@ -97,318 +86,219 @@ body {
   /* Background color on scroll down */
 }
 
-.box {
-  padding-block: 9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  backdrop-filter: blur(15px);
-  background-color: rgba(33, 30, 30, 0.5568627451);
-  align-items: center;
-  justify-content: center;
-  color: #d8d4d4;
-  transition: max-height 0.5s ease-in-out;
-  width: 80%;
-  padding-block: 1rem;
-  padding-inline: 3rem;
-}
-.form .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero_section {
+  padding-top: 100px;
   width: 100%;
-  padding: 0;
-  position: relative;
+  height: 700px;
 }
-.form .logo h1 {
-  font-size: 1rem;
-  font-family: sans-serif;
-  font-weight: 900;
-  margin-left: -20px;
-  padding-block: 0;
-}
-.form .logo .icon {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  left: 26%;
-}
-.form .logo .icon img {
+.hero_section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
-.form h3.signup-caption {
-  font-size: 3rem;
-  font-weight: 500;
-  text-align: center;
+
+/* Navbar on Scroll (Active State) dom class */
+.scroll {
+  background: rgba(27, 25, 25, 0.5568627451);
+  backdrop-filter: blur(14px);
+  /* Background color on scroll down */
 }
-.form P {
-  font-size: 20px;
-}
-.form p.small {
-  font-size: 1rem;
-  margin-left: 34px;
-  text-align: left;
-  width: 100%;
-}
-.form h4 {
-  margin-top: 0;
-}
-.form .div {
-  margin: 5px auto;
-  width: 100%;
+
+section.choose {
+  padding: 50px;
+  gap: 3rem;
+  padding-block: 10rem;
   display: flex;
-  gap: 2rem;
-  padding: 10px;
-  padding-bottom: 0;
+  background-color: black;
+  color: white;
+  flex-direction: column;
 }
-.form .input_box {
-  width: 100%;
-}
-.form .input {
+section.choose header {
+  align-self: center;
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  border: 2px solid transparent;
-  color: white;
-  overflow: hidden;
+}
+section.choose header h4 {
+  font-size: 1.4rem;
+}
+section.choose header p {
+  font-size: 2.5rem;
+  color: #ca0123;
+}
+section.choose .choose-body {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 0;
+  padding-inline: 20px;
 }
-.form .input .eyeclosed {
-  visibility: hidden;
-  position: absolute;
-  bottom: 22%;
-  right: 7px;
+section.choose .choose-body .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
-.form .input i.ri-git-repository-private-fill,
-.form .input i.ri-mail-fill,
-.form .input i.ri-cake-2-line,
-.form .input i.ri-user-4-line,
-.form .input i.ri-user-fill {
-  right: 7px;
-  bottom: 24%;
-  transition: opacity 0.6s ease-in-out;
-}
-.form .input i.ri-weight-line,
-.form .input i.ri-expand-height-fill,
-.form .input i.ri-health-book-fill {
-  left: 7px;
-  bottom: 24%;
-  transition: opacity 0.6s ease-in-out;
-  transition: transform 0.7s ease-in-out;
-}
-.form .input i {
-  position: absolute;
-  right: 7px;
-}
-.form .input:hover i.ri-git-repository-private-fill,
-.form .input:hover i.ri-mail-fill,
-.form .input:hover i.ri-cake-2-line,
-.form .input:hover i.ri-user-4-line,
-.form .input:hover i.ri-user-fill {
-  opacity: 0.3;
-}
-.form .input:hover i.ri-weight-line,
-.form .input:hover i.ri-expand-height-fill,
-.form .input:hover i.ri-health-book-fill {
-  transform: translatey(170%);
-  opacity: 0.3;
-}
-.form .input input {
-  width: 100%;
-  color: white;
-  border: 2px solid transparent;
-  transition: border 0.4s ease-in-out;
-  outline: none;
-  background-color: #222324;
-  padding: 10px;
-  font-size: 1rem;
-}
-.form .input input:hover {
-  cursor: pointer;
-}
-.form .input input::placeholder {
-  color: white;
-  opacity: 0.4;
-  transition: text-indent 0.9s;
-}
-.form .input input:focus-within {
-  border-color: wheat;
-  text-indent: 30px;
-}
-.form .auth-div {
-  margin: 5px auto;
-  width: 100%;
+section.choose .choose-body .card .img {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 100%;
   display: flex;
   padding: 10px;
-  gap: 2rem;
-  padding-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 32px rgba(134, 121, 121, 0.3);
+  background: rgba(255, 255, 255, 0.1);
 }
-.form .auth-div .auth {
-  width: 100%;
+section.choose .choose-body .card .img i {
+  font-size: 3rem;
+  color: #ca0123;
 }
-.form .signup {
-  width: 50%;
-  padding: 9px;
-  border-radius: 7px;
-  background-color: #ca0123;
-  font-size: 1.2rem;
-  color: #d8d4d4;
-  border: 2px solid transparent;
-  transition: all 0.2s ease-in-out;
-  margin-top: 1.5rem;
-  margin-bottom: 0.6rem;
+section.choose .choose-body .card .caption {
+  font-weight: 700;
+  font-size: 1.4rem;
 }
-.form .signup:hover {
-  background-color: #6b4343;
-  color: white;
-  cursor: pointer;
-  border-color: white;
-}
-.form .signup:hover a.btn-border {
-  border-color: transparent;
-}
-.form .signup:disabled {
-  background-color: transparent;
-  border-color: grey;
-}
-.form .btn-border {
-  width: 100%;
-  padding: 12px;
-  border-radius: 7px;
-  margin-bottom: 30px;
-  font-size: 1.2rem;
-  color: #d8d4d4;
-  border: 2px solid #ca0123;
-}
-.form a.btn-border {
-  padding: 12px;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 7px;
-  border-radius: 7px;
-  margin-bottom: 30px;
-  font-size: 1.2rem;
-  color: white;
-  border: 2px solid #ca0123;
-}
-.form .check {
+section.choose .choose-body .card p {
+  margin-top: 10px;
   font-weight: 200;
 }
-.form .check .login {
-  padding: 2px;
-  letter-spacing: 1px;
+
+.achievements {
+  display: flex;
+}
+.achievements .right {
+  height: 600px;
+  width: 50%;
+}
+.achievements .right video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.achievements .left {
+  padding: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.achievements .left header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 4px;
+  padding: 20px;
+}
+.achievements .left header h4 {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.achievements .left header h3 {
   font-weight: 700;
-  border-bottom: 1px solid;
-  margin-left: 7px;
-  text-decoration: none;
-  color: white;
-  transition: all 0.2s ease-in-out;
-  border-radius: 4px;
+  font-size: 2.5rem;
+  color: #ca0123;
 }
-.form .check .login:hover {
-  background-color: #d8d4d4;
-  color: black;
-  border-color: transparent;
-}
-.form :disabled {
-  background-color: transparent;
-  border-color: grey;
+.achievements .left .text {
+  padding: 20px;
 }
 
-/* Modal Styles */
-.modal {
-  display: none;
-  /* Hide the modal by default */
-  position: fixed;
-  /* Stay in place when scrolling */
-  z-index: 1;
-  /* Sit on top of other content */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if modal content overflows */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Transparent black background */
-  /* Modal Content */
-  /* Animation for modal entrance (optional) */
-  /* Modal Header */
-  /* Modal Body */
-  /* Modal Footer */
+.tracker {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem;  Adjust as needed using rem or px */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* background-color: #f3f4f6;  Light gray, consider using Tailwind's colors */
 }
-.modal .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
+
+.tracker-bar {
+  flex: 1;
+  height: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #242425; /* Gray 200 */
   position: relative;
-  /* 15% from the top and centered horizontally */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Modal content width */
-  animation-name: modalAnim;
-  /* Optional: Add animation for modal entrance */
-  animation-duration: 0.4s;
+  overflow: hidden; /* Ensure the filled part doesn't overflow */
 }
-@keyframes modalAnim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.modal .modal-header {
-  padding: 16px;
-  border-bottom: 1px solid #e0e0e0;
-}
-.modal .modal-title {
-  margin-bottom: 0;
-  font-size: 2.3em;
-  font-weight: 600;
-  text-align: center;
-}
-.modal .modal-body {
-  padding: 20px;
-}
-.modal .modal-body p {
-  font-size: 1.2em;
-  font-weight: 500;
-  text-align: center;
-}
-.modal .close-modal {
-  color: #ca0123;
-  font-size: 38px;
-  font-weight: bold;
-  background: transparent;
-  border: none;
-  outline: none;
+
+.tracker-bar-fill {
   position: absolute;
   top: 0;
-  right: 12px;
-}
-.modal .close-modal:hover,
-.modal .close-modal:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-.modal .error-title {
-  color: #ca0123;
+  left: 0;
+  height: 100%;
+  border-radius: 0.5rem;
+  background: #ca0123; /* Gray 500 */
+  width: 80%; /* Start with 0% */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
 }
 
-.show {
-  display: block;
+.tracker-bar-fill.two {
+  width: 70%;
+}
+
+.tracker-bar-fill.three {
+  width: 60%;
+}
+
+.tracker-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ca0123; /* Gray 700 */
+  margin-right: 0.75rem; /* Use rem for consistency */
+  white-space: nowrap; /* Prevent label wrapping */
+}
+
+.tracker-percentage {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ca0123; /* Gray 700 */
+  margin-left: 0.75rem;
+  white-space: nowrap;
+}
+
+.carousel {
+  padding-block: 6rem;
+  padding-inline: 20px;
+  background: linear-gradient(to right, rgb(0, 0, 0), black);
+  position: relative;
+}
+.carousel header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+}
+.carousel header h2 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 23px rgba(202, 1, 35, 0.8);
+}
+.carousel header button {
+  background: white;
+  padding: 10px;
+  padding-inline: 25px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.carousel .mybox {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-block: 4rem;
+}
+.carousel .mybox .mySwiper {
+  border-radius: 50px;
+  overflow: hidden;
+  height: 600px;
+}
+
+.first img {
+  object-position: top;
 }
 
 .footer {
@@ -681,4 +571,4 @@ body {
   } */
 }
 
-/*# sourceMappingURL=Signup.css.map */
+/*# sourceMappingURL=about.css.map */

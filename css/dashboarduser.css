@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 @import "../css/Font.css";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Saira", sans-serif;
@@ -31,12 +30,9 @@ body {
   height: 98vh;
   inset: 0;
   padding-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: poppins;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background-color: rgba(33, 30, 30, 0.728);
 }
 .dashboard .sidebar {
@@ -64,27 +60,17 @@ body {
 .dashboard .sidebar .profileimg img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .dashboard .sidebar nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 16px;
 }
 .dashboard .sidebar nav li {
   padding-inline: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
 }
 .dashboard .sidebar nav li a {
@@ -94,7 +80,6 @@ body {
 .dashboard .sidebar nav li a::after {
   content: "";
   position: absolute;
-  -webkit-transition: width 0.26s ease-in-out;
   transition: width 0.26s ease-in-out;
   height: 1px;
   background-color: #e0d5d5;
@@ -142,119 +127,128 @@ body {
   font-weight: 700;
   background-color: transparent;
 }
-.dashboard .center header .search input:focus-within::-webkit-input-placeholder {
-  opacity: 0.3;
-  text-indent: 40px;
-}
-.dashboard .center header .search input:focus-within::-moz-placeholder {
-  opacity: 0.3;
-  text-indent: 40px;
-}
-.dashboard .center header .search input:focus-within:-ms-input-placeholder {
-  opacity: 0.3;
-  text-indent: 40px;
-}
-.dashboard .center header .search input:focus-within::-ms-input-placeholder {
-  opacity: 0.3;
-  text-indent: 40px;
-}
 .dashboard .center header .search input:focus-within::placeholder {
   opacity: 0.3;
   text-indent: 40px;
-}
-.dashboard .center header .search input::-webkit-input-placeholder {
-  font-weight: 700;
-  font-family: poppins;
-  letter-spacing: 2px;
-  color: antiquewhite;
-  -webkit-transition: text-indent 0.6s ease-in-out;
-  transition: text-indent 0.6s ease-in-out;
-}
-.dashboard .center header .search input::-moz-placeholder {
-  font-weight: 700;
-  font-family: poppins;
-  letter-spacing: 2px;
-  color: antiquewhite;
-  -moz-transition: text-indent 0.6s ease-in-out;
-  transition: text-indent 0.6s ease-in-out;
-}
-.dashboard .center header .search input:-ms-input-placeholder {
-  font-weight: 700;
-  font-family: poppins;
-  letter-spacing: 2px;
-  color: antiquewhite;
-  -ms-transition: text-indent 0.6s ease-in-out;
-  transition: text-indent 0.6s ease-in-out;
-}
-.dashboard .center header .search input::-ms-input-placeholder {
-  font-weight: 700;
-  font-family: poppins;
-  letter-spacing: 2px;
-  color: antiquewhite;
-  -ms-transition: text-indent 0.6s ease-in-out;
-  transition: text-indent 0.6s ease-in-out;
 }
 .dashboard .center header .search input::placeholder {
   font-weight: 700;
   font-family: poppins;
   letter-spacing: 2px;
   color: antiquewhite;
-  -webkit-transition: text-indent 0.6s ease-in-out;
   transition: text-indent 0.6s ease-in-out;
 }
 .dashboard .center header .search input:hover {
   cursor: pointer;
 }
 .dashboard .center .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
   padding-block: 30px;
 }
-.dashboard .center .box main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.dashboard .center .box main .goals {
+  display: flex;
+  gap: 3rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard .center .box main .goals .goal {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap: 1rem;
+  width: 28%;
+  background-color: #f5efef;
+}
+.dashboard .center .box main .goals .goal * {
+  color: black;
+}
+.dashboard .center .box main .goals .goal .icon {
+  font-size: 0.5rem;
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  height: 90px;
+}
+.dashboard .center .box main .goals .goal .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: black;
+}
+.dashboard .center .box main .goals .goal .text {
+  display: flex;
+  justify-content: center;
+}
+.dashboard .center .box main .goals .goal .progress-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
   gap: 20px;
 }
-.dashboard .center .box main .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 7px;
-  background-color: #f5efef;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
+.dashboard .center .box main .goals .goal .progress-container p {
+  width: 60%;
   text-align: center;
-  padding: 20px;
 }
-.dashboard .center .box main .info p {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #131212;
+@keyframes progress {
+  0% {
+    --percentage: 0;
+  }
+  100% {
+    --percentage: var(--value);
+  }
 }
-.dashboard .center .box main .info small {
-  color: #131212;
+@property --percentage {
+  .dashboard .center .box main .goals .goal .progress-container {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+}
+.dashboard .center .box main .goals .goal .progress-container [role=progressbar] {
+  --percentage: var(--value);
+  --primary: #369;
+  --secondary: #adf;
+  --size: 100px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.dashboard .center .box main .goals .goal .progress-container [role=progressbar]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(rgba(0, 0, 0, 0) 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+.dashboard .center .box main .goals .goal .progress-container [role=progressbar]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
 }
 .dashboard .right {
   width: 30%;
   border-top-left-radius: 30px;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-bottom: 90px;
   padding-inline: 20px;
   background: #f5efef;
@@ -282,13 +276,8 @@ body {
 .dashboard .right .spans p {
   padding-inline: 10px;
   font-size: 1.1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
   margin: 0;
 }
@@ -302,25 +291,15 @@ body {
   color: #000;
 }
 .dashboard .right .schedules {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   padding-bottom: 30px;
 }
 .dashboard .right .schedules .box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 4px;
   border-radius: 7px;
   background-color: rgb(27, 26, 26);
@@ -335,122 +314,16 @@ body {
   font-size: 1.4rem;
 }
 
-.exit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: rgba(33, 30, 30, 0.628);
-  height: 100vh;
-}
-.exit .exitmodalBody {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 30%;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 2px solid transparent;
-  top: 0;
-  left: 37%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 20px;
-  background-color: rgba(33, 30, 30, 0.9294117647);
-  color: black;
-  -webkit-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
-}
-.exit .exitmodalBody:hover {
-  border-color: white;
-}
-.exit .icon {
-  font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-  padding: 6px;
-  top: -52px;
-  border-width: 8px;
-  border-radius: 100%;
-}
-.exit .text {
-  padding-inline: 20px;
-  padding-block: 10px;
-  padding-top: 30px;
-  height: 70%;
-  text-align: center;
-}
-.exit .container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 20%;
-}
-.exit .container * {
-  width: 50%;
-  color: black;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-.exit .container .cancel {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.exit .container .cancel:hover {
-  background: rgba(33, 30, 30, 0.9294117647);
-  cursor: pointer;
-  color: white;
-  border-color: white;
-}
-.exit .container .proceed {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.exit .container .proceed:hover {
-  background: rgba(33, 30, 30, 0.9294117647);
-  cursor: pointer;
-  color: white;
-  border-color: white;
-}
-
 section.profile {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
   padding: 20px;
   border: 2px solid;
   background: rgba(33, 30, 30, 0.728);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   margin-bottom: 20px;
 }
 section.profile header .img {
@@ -462,8 +335,7 @@ section.profile header .img {
 section.profile header .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 section.profile header h1 {
   text-align: center;
@@ -472,9 +344,7 @@ section.profile main.profile {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 3rem;
-     -moz-column-gap: 3rem;
-          column-gap: 3rem;
+  column-gap: 3rem;
 }
 section.profile main.profile .box h1 {
   text-align: center;
@@ -495,13 +365,8 @@ section.profile main.profile .box .container .values {
 }
 section.profile main.profile .bmi {
   border: 2px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
   background: rgba(33, 30, 30, 0.628);
 }
@@ -511,13 +376,8 @@ section.profile main.profile .bmi h1 {
 }
 section.profile main.profile .bmi .bmi_input {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-inline: 20px;
 }
 section.profile main.profile .bmi .bmi_input input {
@@ -526,7 +386,6 @@ section.profile main.profile .bmi .bmi_input input {
   outline: none;
   background-color: transparent;
   border-bottom: 2px solid #fefefe;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 1.2em;
 }
@@ -534,13 +393,9 @@ section.profile main.profile .bmi .bmi_input input:focus {
   text-indent: 30px;
 }
 section.profile main.profile .bmi .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 2rem;
 }
 section.profile main.profile .bmi .btn button {
@@ -551,7 +406,6 @@ section.profile main.profile .bmi .btn button {
   border: 2px solid white;
   text-transform: capitalize;
   font-weight: 700;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 section.profile main.profile .bmi .btn button:hover {
@@ -560,13 +414,8 @@ section.profile main.profile .bmi .btn button:hover {
   color: black;
 }
 section.profile .input_profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 660px;
   border: 2px solid;
   padding: 8px;
@@ -581,25 +430,15 @@ section.profile .input_profile h1 {
   font-size: 3em;
 }
 section.profile .input_profile .inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.4rem;
 }
 section.profile .input_profile .inputs .input {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 section.profile .input_profile .inputs .input label {
   font-size: 1.2rem;
@@ -612,23 +451,10 @@ section.profile .input_profile .inputs .input input {
   background-color: transparent;
   outline: none;
   border: 1px solid white;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 section.profile .input_profile .inputs .input input:focus {
   text-indent: 30px;
-}
-section.profile .input_profile .inputs .input input::-webkit-input-placeholder {
-  font-size: 20px;
-}
-section.profile .input_profile .inputs .input input::-moz-placeholder {
-  font-size: 20px;
-}
-section.profile .input_profile .inputs .input input:-ms-input-placeholder {
-  font-size: 20px;
-}
-section.profile .input_profile .inputs .input input::-ms-input-placeholder {
-  font-size: 20px;
 }
 section.profile .input_profile .inputs .input input::placeholder {
   font-size: 20px;
@@ -644,7 +470,6 @@ section.profile .input_profile .save {
   font-weight: 700;
   font-size: 1.1em;
   font-weight: 700;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 section.profile .input_profile .save:hover {
@@ -655,10 +480,11 @@ section.profile .input_profile .save:hover {
 }
 
 .nutrition {
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background: rgba(33, 30, 30, 0.628);
   padding-block: 60px;
+  padding-bottom: 100px;
+  position: relative;
 }
 .nutrition h2 {
   text-transform: capitalize;
@@ -681,232 +507,129 @@ section.profile .input_profile .save:hover {
   background-color: #f2f2f2;
   color: #000;
 }
+.nutrition .closer {
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+}
 
 .exercise {
   background: rgba(0, 0, 0, 0.628);
-  height: 100vh;
+  min-height: 100vh;
 }
-
-.userdata_table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid black;
-}
-.userdata_table th,
-.userdata_table td {
-  border: 1px solid white;
-  padding: 15px;
-  text-align: left;
-}
-.userdata_table th {
-  background-color: #f2f2f2;
-  color: #000;
-}
-
-section.profile.hidden {
-  display: none;
-}
-
-.hidden {
-  display: none;
-}
-
-.closer {
-  text-decoration: none;
-  background-color: #f2f2f2;
-  padding: 20px;
-  padding-inline: 40px;
-  color: #000;
-  border: 2px solid transparent;
-}
-.closer:hover {
-  background-color: transparent;
-  color: #f2f2f2;
-  border-color: #f2f2f2;
-  cursor: pointer;
-}
-
-.settings_box.hidden {
-  display: none;
-}
-
-.settings_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.exercise .exercise-list {
   display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: rgba(0, 0, 0, 0.828);
-  gap: 7rem;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
 }
-.settings_box .settings {
-  width: 40%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
-  height: 100%;
+.exercise .exercise-list .menu-checkbox {
+  display: none;
 }
-.settings_box .settings h1 {
-  font-size: 2.5rem;
-  margin-left: 30px;
-  text-transform: capitalize;
-}
-.settings_box .settings .input {
-  width: 100%;
-  margin: 0 auto;
+.exercise .exercise-list .menu {
   position: relative;
 }
-.settings_box .settings .input input {
-  width: 100%;
-  padding: 13px;
-  background-color: white;
-  text-indent: 30px;
-  border-color: #fefefe;
-  outline: none;
-  font-size: 1.2rem;
-  color: black;
-  -webkit-transition: text-indent 0.4s ease-in-out;
-  transition: text-indent 0.4s ease-in-out;
-}
-.settings_box .settings .input input::-webkit-input-placeholder {
-  -webkit-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input::-moz-placeholder {
-  -moz-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input:-ms-input-placeholder {
-  -ms-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input::-ms-input-placeholder {
-  -ms-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input::placeholder {
-  -webkit-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input:focus-within::-webkit-input-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within::-moz-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within:-ms-input-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within::-ms-input-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within::placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input i {
-  left: 9px;
-  position: absolute;
-  top: 16px;
-  font-size: 1.2em;
-  color: #000;
-}
-.settings_box .settings .results {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.exercise .exercise-list .menu-dots {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.3rem #161e3f;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.settings_box .settings .results .result {
-  border: 2px solid white;
-  width: 100%;
-  background-color: white;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.exercise .exercise-list .menu-dots:hover {
+  box-shadow: 0 0 0 0.3rem #9e9fa5, 0 0 0 1rem rgba(125, 126, 131, 0.16);
+  transform: scale(1.2) rotate(90deg);
+}
+.exercise .exercise-list h1 {
   font-size: 1.2rem;
-}
-.settings_box .settings .results .result * {
-  color: #000;
-}
-.settings_box .notifications {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.2rem;
-  height: 100%;
-  width: 40%;
-}
-.settings_box .notifications h1 {
-  font-size: 2.5rem;
-  text-transform: capitalize;
-}
-.settings_box .notifications .notify-p {
-  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  z-index: 40;
+  letter-spacing: 2px;
   text-align: center;
 }
-.settings_box .notifications .notification {
-  border: 2px solid white;
-  width: 100%;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.exercise .exercise-list .menu-items {
+  position: absolute;
+  top: -2.3rem;
+  left: -2.2rem;
+  width: 9.4rem;
+  height: 11rem;
+  color: #fff;
+  pointer-events: none;
   display: flex;
-  gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.2rem;
-}/*# sourceMappingURL=dashboarduser.css.map */ise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(3) {
-  -webkit-transform: rotate(-10deg) translate(10rem) rotate(10deg);
-          transform: rotate(-10deg) translate(10rem) rotate(10deg);
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.exercise .exercise-list .menu-item {
+  transform: scale(0.5);
+  filter: blur(10px);
+  transition: 0.3s;
+  transform: rotate(0deg) translate(5rem) rotate(0deg);
+  /* Adjust translate(5rem) based on your circle radius */
+  transition: transform 0.3s;
+  list-style: none;
+}
+.exercise .exercise-list .menu-item .icon {
+  width: 50px;
+  height: 50px;
+}
+.exercise .exercise-list .menu-item .icon img {
+  width: 100%;
+  height: 100%;
+}
+.exercise .exercise-list .menu-checkbox:checked + .menu > .menu-dots {
+  transform: none;
+  box-shadow: 0 0 0 3.4rem #161e3f;
+}
+.exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items {
+  opacity: 1;
+  pointer-events: auto;
+}
+.exercise .exercise-list .menu-closer-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 15.8);
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+}
+.exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+.exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(1) {
+  transform: rotate(34deg) translate(15rem) rotate(-34deg);
+  transition-delay: 0.05s;
+}
+.exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(2) {
+  transform: rotate(64deg) translate(4rem) rotate(-90deg);
+  transition-delay: 0.1s;
+}
+.exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(3) {
+  transform: rotate(-10deg) translate(10rem) rotate(10deg);
+  transition-delay: 0.15s;
 }
 .exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(4) {
-  -webkit-transform: rotate(200deg) translate(5rem) rotate(-200deg);
-          transform: rotate(200deg) translate(5rem) rotate(-200deg);
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transform: rotate(200deg) translate(5rem) rotate(-200deg);
+  transition-delay: 0.2s;
 }
 .exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(5) {
-  -webkit-transform: rotate(240deg) translate(6rem) rotate(-240deg);
-          transform: rotate(240deg) translate(6rem) rotate(-240deg);
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  transform: rotate(240deg) translate(6rem) rotate(-240deg);
+  transition-delay: 0.25s;
 }
 .exercise .exercise-list .menu-checkbox:checked + .menu > .menu-items > .menu-item:nth-child(6) {
-  -webkit-transform: rotate(70deg) translate(4rem) rotate(10deg);
-          transform: rotate(70deg) translate(4rem) rotate(10deg);
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transform: rotate(70deg) translate(4rem) rotate(10deg);
+  transition-delay: 0.3s;
 }
 .exercise .exercise-list .menu-checkbox:checked + .menu > .menu-closer-overlay {
   pointer-events: auto;
@@ -963,13 +686,9 @@ nutrition closer .hidden {
 }
 
 .settings_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.828);
   gap: 7rem;
   padding-top: 30px;
@@ -977,13 +696,8 @@ nutrition closer .hidden {
 }
 .settings_box .settings {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
   height: 100%;
 }
@@ -1005,44 +719,10 @@ nutrition closer .hidden {
   outline: none;
   font-size: 1rem;
   color: black;
-  -webkit-transition: text-indent 0.4s ease-in-out;
   transition: text-indent 0.4s ease-in-out;
 }
-.settings_box .settings .input input::-webkit-input-placeholder {
-  -webkit-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input::-moz-placeholder {
-  -moz-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input:-ms-input-placeholder {
-  -ms-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input::-ms-input-placeholder {
-  -ms-transition: text-indent 0.3s ease-in-out;
-  transition: text-indent 0.3s ease-in-out;
-}
 .settings_box .settings .input input::placeholder {
-  -webkit-transition: text-indent 0.3s ease-in-out;
   transition: text-indent 0.3s ease-in-out;
-}
-.settings_box .settings .input input:focus-within::-webkit-input-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within::-moz-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within:-ms-input-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
-}
-.settings_box .settings .input input:focus-within::-ms-input-placeholder {
-  opacity: 0.8;
-  text-indent: 50px;
 }
 .settings_box .settings .input input:focus-within::placeholder {
   opacity: 0.8;
@@ -1056,13 +736,8 @@ nutrition closer .hidden {
   color: #000;
 }
 .settings_box .settings .results {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
 .settings_box .settings .results .result {
@@ -1070,25 +745,16 @@ nutrition closer .hidden {
   width: 100%;
   background-color: white;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 1rem;
 }
 .settings_box .settings .results .result * {
   color: #000;
 }
 .settings_box .notifications {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.2rem;
   height: 100%;
   width: 40%;
@@ -1108,16 +774,10 @@ nutrition closer .hidden {
   border: 2px solid white;
   width: 100%;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
 }
 .settings_box .closer {
@@ -1132,40 +792,25 @@ nutrition closer .hidden {
 }
 
 .exit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(33, 30, 30, 0.628);
   height: 100vh;
 }
 .exit .exitmodalBody {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 30%;
   height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 2px solid transparent;
   top: 0;
   left: 37%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   padding-top: 20px;
   background-color: rgba(33, 30, 30, 0.9294117647);
   color: black;
-  -webkit-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
 .exit .exitmodalBody:hover {
@@ -1173,15 +818,9 @@ nutrition closer .hidden {
 }
 .exit .icon {
   font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   padding: 6px;
   top: -52px;
@@ -1197,8 +836,6 @@ nutrition closer .hidden {
 }
 .exit .button-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 20%;
 }
@@ -1209,7 +846,6 @@ nutrition closer .hidden {
   font-size: 1.5rem;
 }
 .exit .button-container .cancel {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .exit .button-container .cancel:hover {
@@ -1219,7 +855,6 @@ nutrition closer .hidden {
   border-color: white;
 }
 .exit .button-container .proceed {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .exit .button-container .proceed:hover {
@@ -1227,4 +862,6 @@ nutrition closer .hidden {
   cursor: pointer;
   color: white;
   border-color: white;
-}/*# sourceMappingURL=dashboarduser.css.map */
+}
+
+/*# sourceMappingURL=dashboarduser.css.map */

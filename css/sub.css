@@ -8,26 +8,17 @@
   font-family: "Saira", sans-serif;
   font-weight: 400px;
   font-style: normal;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 .exit {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 30%;
   height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   margin: 6% auto;
   position: relative;
   padding-top: 30px;
@@ -37,15 +28,9 @@
 .exit .icon {
   font-size: 30px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   top: -52px;
   border-width: 8px;
@@ -60,8 +45,6 @@
 }
 .exit .container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 20%;
 }
@@ -70,20 +53,12 @@
 }
 
 .empty {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 30%;
   height: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   margin: 6% auto;
   position: relative;
   background-color: white;
@@ -101,7 +76,6 @@
   text-align: right;
   font-size: 28px;
   font-weight: bold;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 .empty .close:hover,
@@ -112,20 +86,12 @@
 }
 
 .networkerror {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 0.4rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 6% auto;
   position: relative;
   background-color: white;
@@ -140,31 +106,19 @@
 }
 .networkerror .img {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 400px;
 }
 .networkerror .img img {
   width: 50%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .networkerror .img .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .networkerror .img .text span {
   font-size: 3rem;
@@ -177,7 +131,6 @@
   padding-inline: 30%;
   font-size: 1.5rem;
   background: #ca0123;
-  -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
 .networkerror button:hover {
@@ -186,16 +139,9 @@
 
 section.profile {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
 }
 section.profile header .img {
@@ -207,8 +153,7 @@ section.profile header .img {
 section.profile header .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 section.profile header h1 {
   text-align: center;
@@ -225,13 +170,8 @@ section.profile main.profile .box {
   width: 450px;
 }
 section.profile main.profile .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
 section.profile main.profile .about h1 {
@@ -248,13 +188,8 @@ section.profile main.profile .about aside p {
   padding: 20px;
 }
 section.profile main.profile .scheme {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
 section.profile main.profile .scheme h1 {
@@ -275,13 +210,8 @@ section.profile main.profile .bmi_box h1 {
 }
 section.profile main.profile .bmi_box .bmi {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
 section.profile main.profile .bmi_box .bmi input {
@@ -292,23 +222,10 @@ section.profile main.profile .bmi_box .bmi input {
   outline: none;
   border-top: 0;
   border-inline: 0;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 section.profile main.profile .bmi_box .bmi input:focus {
   text-indent: 50px;
-}
-section.profile main.profile .bmi_box .bmi input::-webkit-input-placeholder {
-  letter-spacing: 2px;
-}
-section.profile main.profile .bmi_box .bmi input::-moz-placeholder {
-  letter-spacing: 2px;
-}
-section.profile main.profile .bmi_box .bmi input:-ms-input-placeholder {
-  letter-spacing: 2px;
-}
-section.profile main.profile .bmi_box .bmi input::-ms-input-placeholder {
-  letter-spacing: 2px;
 }
 section.profile main.profile .bmi_box .bmi input::placeholder {
   letter-spacing: 2px;
@@ -320,7 +237,6 @@ section.profile main.profile .bmi_box .bmi button {
   background: transparent;
   font-weight: 600;
   letter-spacing: 1.5px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 section.profile main.profile .bmi_box .bmi button:hover {
@@ -331,16 +247,9 @@ section.profile main.profile .bmi_box .bmi button:hover {
 
 .input_profile {
   margin-top: -40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-block: 10px;
   padding-inline: 20px;
   width: 900px;
@@ -357,8 +266,6 @@ section.profile main.profile .bmi_box .bmi button:hover {
   text-transform: capitalize;
 }
 .input_profile .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 4rem;
   width: 100%;
@@ -367,13 +274,8 @@ section.profile main.profile .bmi_box .bmi button:hover {
   width: 50%;
 }
 .input_profile .container .credentials .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 .input_profile .container .credentials .input input {
@@ -382,24 +284,10 @@ section.profile main.profile .bmi_box .bmi button:hover {
   border-bottom: 2px solid white;
   color: white;
 }
-.input_profile .container .credentials .input input::-webkit-input-placeholder {
-  color: white;
-}
-.input_profile .container .credentials .input input::-moz-placeholder {
-  color: white;
-}
-.input_profile .container .credentials .input input:-ms-input-placeholder {
-  color: white;
-}
-.input_profile .container .credentials .input input::-ms-input-placeholder {
-  color: white;
-}
 .input_profile .container .credentials .input input::placeholder {
   color: white;
 }
 .input_profile .container .credentials .gender {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   gap: 2px;
@@ -409,7 +297,6 @@ section.profile main.profile .bmi_box .bmi button:hover {
   background: transparent;
   border: 2px solid white;
   color: white;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .input_profile .container .credentials .gender button:hover {
@@ -421,20 +308,14 @@ section.profile main.profile .bmi_box .bmi button:hover {
   width: 50%;
 }
 .input_profile .container .workout_plan .plan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 .input_profile .container .workout_plan .plan input {
   background-color: transparent;
   outline: none;
   border-bottom: 2px solid white;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .input_profile .container .workout_plan .plan input:focus {
@@ -447,11 +328,12 @@ section.profile main.profile .bmi_box .bmi button:hover {
   color: white;
   font-weight: 700;
   border: 2px solid white;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .input_profile button:hover {
   border-color: transparent;
   background-color: white;
   color: black;
-}/*# sourceMappingURL=sub.css.map */
+}
+
+/*# sourceMappingURL=sub.css.map */

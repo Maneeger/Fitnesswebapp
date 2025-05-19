@@ -3,19 +3,9 @@
 
 * {
     @include boxmodel(400px);
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
     // @include border
 }
-
-body {
-
-    color: white;
-    width: 99vw;
-    position: relative;
-    scroll-behavior: smooth;
-}
-
-
 .topheader {
     display: flex;
     align-items: center;
@@ -28,7 +18,7 @@ body {
     left: 0;
     z-index: 5;
     transition: background-color 0.3s ease-in-out;
-    will-change: background-color;
+    // will-change: background-color;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
     .logo {
@@ -41,6 +31,7 @@ body {
             font-family: sans-serif;
             font-weight: 900;
             margin-left: -20px;
+            color: white;
         }
 
         .icon {
@@ -67,7 +58,8 @@ body {
             font-size: 1.2rem;
         }
     }
-    .btn {
+    // utility
+.btn {
     @include Button
 }
 }
@@ -77,246 +69,229 @@ body {
     backdrop-filter: blur(14px);
     /* Background color on scroll down */
 }
-
-
-.subheader {
-
-    @include sub-header(black, white);
-    backdrop-filter: blur(1px)
-}
-
-.subheader-two {
-    @include sub-header(white, rgba(black, 0.4));
-    .text{
-        h1{
-            font-size: 3rem;
-            color: $logo-color;
-            text-transform: capitalize;
-            
-        }
-        p{
-            color: black;
-        }
-    }
-
-}
-
-
-
-
-
-.grey-section {
-    padding-top: 6rem;
-    display: flex;
-    width: 100%;
-    height: 800px;
-    gap: 2px;
-    // background: url(../img/2ndslidebg.jpg);/
-    background: black;
-
-
-
-
-    .img {
-    width: 40%;
-    height: 100%;
-  
-      img{
+.hero_section{
+    padding-top: 100px;
+    width:100%;
+   height: 700px;
+     img{
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-
-
-
-    }
-
-    .div-1,
-    .div-2 {
-        width: 35%;
-        height: 100%;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-       justify-content: center;
-        gap: 4rem;
-
-    }
+        object-position: top;
+     }
 
 }
-
-.swiper-container {
-    width: 100%;
-    background: rgba(black, 0.8);
-    backdrop-filter: blur(10px);
-    overflow-y:scroll;
-}
-
-.swiper {
-    width: 80%;
-    height: 600px;
-
-
-    .swiper-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-
-
-}
-
-.transparent {
-
-    color: transparent;
-}
-
-.card {
-    height: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 20px rgba(white, 0.3);
-
-    .img {
-        height: 80%;
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .text {
-        height: 20%;
-        width: 100%;
-        background: rgba(white, 0.1);
-        color: white;
-        backdrop-filter: blur(10px);
-        font-weight: 700;
-        text-align: center;
-        font-size: 1.2em;
-    }
-}
-
-.join {
-    // background: url(../img/pexels-leonardho-1552242.jpg);
-    background: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-block: 300px;
-    position: relative;
-
-    .join-text {
-        display: flex;
-        inset: 0;
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(2px);
-
-        h1 {
-            font-size: 3.5rem;
-        }
-
-        .member-link {
-            padding: 20px;
-            text-decoration: none;
-            font-weight: 700px;
-            padding-inline: 40px;
-            background: transparent;
-            color: white;
-            border: 2px solid;
-            will-change: background;
-
-
-            &:hover {
-                background: white;
-                color: black;
-            }
-        }
-    }
-}
-
-//dom
+/* Navbar on Scroll (Active State) dom class */
 .scroll {
     background: #1b19198e;
     backdrop-filter: blur(14px);
     /* Background color on scroll down */
 }
 
-//fade
-.fade-on-scroll {
-    opacity: 0;
-    transform: translateX(-100px);
-    /* Initial opacity for hidden items */
-    transition: opacity 0.7s ease-in-out, transform 0.8s ease-in-out;
-
-    will-change: transform, opacity;
-    /* Smooth fade-in animation */
+section.choose{
+    padding: 50px;
+    gap: 3rem;
+    padding-block: 10rem;
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    
+header{
+    align-self: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+justify-content: center;
+    align-items: center;
+    h4{
+        font-size: 1.4rem;
+        
+    }
+    p{
+        font-size: 2.5rem;
+        color: $logo-color;
+    }
 }
-
-.fade-on-scroll.fade-in {
-    opacity: 1;
-    transform: translateX(0);
-
-    /* Opacity for visible items */
-}
-
-
-
-//parallax
-.parallax-section {
-    /* Set height to viewport height */
-    background-size: cover;
-    /* Ensure image covers the section */
-    background-position: center center;
-    /* Center the image */
-    position: relative;
-    /* Allow for relative positioning of content */
-}
-
-.parallax-section:nth-child(even) {
-    background-color: #f0f0f0;
-    /* Optional background color for even sections */
-}
-
-.parallax-content {
-    position: absolute;
-    /* Position content absolutely within the section */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Center content within the section */
-    color: #fff;
-    /* Optional text color for better visibility */
-    text-align: center;
-    /* Center text alignment */
-    padding: 20px;
-}
-//  footer code
-// * {
-//     margin: 0;
-//     padding: 0;
-//   }
-
-  .pg-footer {
-    font-family: 'Roboto', sans-serif;
+.choose-body{
+    padding-top: 20px;
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  padding-inline: 20px;  
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    .img{
+        width: 100px;
+        aspect-ratio: 1;
+       border-radius: 100%;
+       display: flex;
+       padding: 10px;
+       align-items: center;
+       justify-content: center;
+       box-shadow: 2px 2px 32px rgb(134, 121, 121,.3);
+       background: rgba(255, 255, 255, 0.1);
+        i{
+             font-size: 3rem;
+  color: $logo-color;
+        }
+      
+    }
+    .caption{
+        font-weight: 700;
+        font-size: 1.4rem;
+        
+    }
+    p{
+        margin-top: 10px;
+        font-weight: 200;
+    }
   }
-  
-  
+}
+
+}
+
+.achievements{
+    display: flex;
+    
+    .right{
+
+        height: 600px;
+        width: 50%;
+        video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+.left{
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    height: 4px;
+    padding: 20px;
+    h4{
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+        h3{
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: $logo-color;
+        }
+    }
+    .text{
+        padding: 20px;
+    }
+}
+}
+
+ .tracker {
+            display: flex;
+            align-items: center;
+            /* gap: 1rem;  Adjust as needed using rem or px */
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            /* background-color: #f3f4f6;  Light gray, consider using Tailwind's colors */
+        }
+        .tracker-bar {
+            flex: 1;
+            height: 0.75rem;
+            border-radius: 0.5rem;
+            background-color: #242425; /* Gray 200 */
+            position: relative;
+            overflow: hidden; /* Ensure the filled part doesn't overflow */
+        }
+        .tracker-bar-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 0.5rem;
+            background:$logo-color  ; /* Gray 500 */
+            width: 80%; /* Start with 0% */
+            transition: width 0.3s ease-in-out; /* Smooth transition */
+        }
+        .tracker-bar-fill.two{
+             width: 70%;
+        }
+         .tracker-bar-fill.three{
+             width: 60%;
+        }
+        .tracker-label {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $logo-color; /* Gray 700 */
+            margin-right: 0.75rem; /* Use rem for consistency */
+            white-space: nowrap; /* Prevent label wrapping */
+        }
+        .tracker-percentage {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: $logo-color; /* Gray 700 */
+            margin-left: 0.75rem;
+            white-space: nowrap;
+        }
+        .carousel{
+            padding-block: 6rem;
+            padding-inline: 20px;
+            background:linear-gradient(to right,rgb(0, 0, 0,9),black) ;
+            position: relative;
+            header{
+                display: flex;
+                justify-content: space-between;
+                padding-inline: 30px;
+                h2{
+                    text-transform: capitalize;
+                    color: white;
+            font-size: 3.2rem;
+
+            font-weight: 700;
+                    text-shadow: 2px 2px 23px rgb($logo-color,.8);
+                }
+                button{
+                   background: white;
+                   padding: 10px;
+                   padding-inline: 25px;
+                   border-radius: 8px;
+                   text-transform: capitalize;
+                   font-size: 1.5rem;
+                   font-weight: 700;
+                }
+            }
+            .mybox{
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                padding-block: 4rem ;
+                
+                .mySwiper{
+                border-radius: 50px;
+                overflow: hidden;
+                height:600px;
+                
+
+                }
+            }
+        }
+    .first {
+     
+      img{
+        object-position: top;
+      }
+    }
+    
+//footer
+
   .footer {
     background: linear-gradient(black,#272222,#a03333);
       color: #fff;

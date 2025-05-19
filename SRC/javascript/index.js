@@ -9,6 +9,8 @@ window.addEventListener('scroll', () => {
         topheader.classList.remove('scroll'); // Remove the 'scroll' class when scrolled back up
     }
 });
+
+
 const options = {
     rootMargin: "0px",
     threshold: 0.2,

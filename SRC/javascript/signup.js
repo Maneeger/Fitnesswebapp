@@ -38,8 +38,8 @@ const signUp = async (email, password) => {
         const formData = new FormData(form); // Get form data
         const username = formData.get('username');
         const fullname = formData.get('fullname');
-        const role = form.elements['role'].value;
-        console.log(role)
+        // const role = form.elements['role'].value;
+        // console.log(role)
         // 
         console.log('User created:', user.uid);
         showModal(signupmodal)
@@ -50,7 +50,7 @@ const signUp = async (email, password) => {
             email: user.email,
             username: username,
             fullname: fullname,
-            role: role // Assign role as 'admin'
+            // role: role // Assign role as 'admin'
         });
         console.log('User role set to user');
         window.location.href = './Login.html';
